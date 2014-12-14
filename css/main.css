@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document 5/20 8:48*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,300,100); /* 400 available*/
+
+/* mobile first */
+
+/* HTML TAGS */
+html, body{
+	height: 100%;
+	width: 100%;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+html, body, h1, p, ul{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto Slab;
+
+}
+
+#title{
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  padding: 3%;
+  font-size: 150px;
+}
+
+#text{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3%;
+}
