@@ -1,0 +1,17 @@
+#proj1 > .p_img{
+  background-image: url(../image/proj1/image1.png);
+  background-size: cover; 
+
+}
+
+#proj2 > .p_img{
+  background-image: url(../image/proj1/image1.png);
+  background-position: 30% 20%; 
+  background-size: cover; 
+}
+
+#proj3 > .p_img{
+  background-image: url(../image/proj1/image1.png);
+  background-position: 10% 50%; 
+  background-size: cover; 
+}

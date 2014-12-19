@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document 5/20 8:48*/
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,300,100); /* 400 available*/
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,300,100); /* 400 available*/
 
 /* mobile first */
 
@@ -16,36 +16,163 @@ html, body{
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+  
+  overflow: hidden;
+  
 }
 
 html, body, h1, p, ul{
 	margin: 0;
 	padding: 0;
-	font-family: Roboto Slab;
+	font-family: brandon_grotesque;
 
 }
 
-a{
-  text-decoration: none;
-  color: inherit; 
-  font-weight: 700;
+/******************/
+/***   Layout   ***/
+/******************/
+
+#menu_container{
+  background: black; /* allows opacity to be greyscale */
+
+  float: left;
+  width: 10%;
+  height: 100%;
+  -webkit-transition: width 1s cubic-bezier(.7,0.01,.7,0.01); 
+  box-sizing: border-box; 
+
 }
 
-a:hover{
-  color: Grey;
+#content_container{
+  background: blue;
+
+  float: left;
+  width: 90%;
+  height: 100%;
+  -webkit-transition: width 1s cubic-bezier(.7,0.01,.7,0.01); 
+  /* this needs to be added to other things */
+
 }
 
-#title{
+#menu_container:hover{
+  width: 25%;
+  -webkit-transition: width .2s; 
+  padding-top: 0;
+
+}
+
+#menu_container:hover + #content_container{
+  width: 75%;
+  -webkit-transition: width .2s; 
+
+}
+
+
+#projects_container{
+  height: 90%;
+  box-sizing: border-box;
+  padding-top: 5%;
+  overflow-y: auto;  
+  overflow-x: hidden;
+  
+  
+  opacity: .8;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#projects_container:hover{
+  padding-top: 0;
+  opacity: 1;
+}
+
+#p_iframe{
+  width: 100%;
+  height: 100%;
+}
+
+#menu{
+  background: green;
+
+  width: 100%;
+  height: 10%;
+}
+
+.project{
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  font-size: 200%;
+
+}
+
+#menu_container:hover .project{
+  height: 4em;
+  line-height: 4em;
+
+  font-size: 400%;
+}
+
+.p_img{
+  opacity: .4;
+  width: 0%;
+  height: 100%;
+
+  
+}
+#menu_container:hover .p_img{
+  width: 100%;
+  height: 100%;
+}
+  
+.project:hover, .project:hover .p_img, .project:hover .p_text{
+  opacity: 1; 
+}
+
+.p_text{
   position: absolute;
-  bottom: -30px;
-  left: 0;
-  padding: 3%;
-  font-size: 150px;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  text-align: center; /* and vertical*/
+  color: white;
+  font-weight: 500;
 }
 
-#text{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 3%;
+
+
+@media (max-aspect-ratio: 4/3) {
+#menu_container{
+  width: 100%;
+  padding-top: 0;
+}
+#content_container{width: 0%;}
+
+#menu_container:hover{
+  width: 100%;
+  padding-top: 0;
+}
+
+#menu_container:hover + #content_container{
+  width: 0%;
+}
+
+.project{
+  height: 20%;
+}
+
+.p_img{
+  width: 100%;
+  height: 100%;
+}
+
+.p_text{
+  font-size: 400%;
+}
+
 }

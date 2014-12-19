@@ -15,10 +15,9 @@ $(function() {
 });
 
 
-//reveal any elements with ".extra" class
-$(function(){
-    $("section").click(function(event) {
-        $(this).find('.extra').toggle();
-		$(this).find('.hide').toggle();		//is slideToggle() slow?
-    });
-});
+function switcher( e ){
+var ifr = document.getElementById( 'p_iframe' );
+
+ifr.src = './projects/' + e + '/index.html'; 
+
+}

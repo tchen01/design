@@ -6,23 +6,61 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width user-scalable=no">
 
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/background.js"></script>
+
+<link href="font/brandon/stylesheet.css" rel="stylesheet" type="text/css" />  
 
 <link href="image/tc.ico" rel="shortcut icon" >
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/projects.css" rel="stylesheet" type="text/css" media="screen" />
 
 </head>
 
 <body>
 
-<h1 id='title'>something <br> big is coming</h1>
-<p id='text'>but in the meantime you can see some of design work at <a href='https://tylerchen.carbonmade.com/'>Carbonmade</a> and read my code at <a href='github.com/tchen01'>Github</a></p>
+<div id='menu_container'>
+  <!-- colorize based on project pages-->
+  <div id='projects_container'>
+    <div id='proj1' class='project' onclick="switcher('proj1')">
+      <div class='p_text'>PROJECT</div>
+      <div class='p_img'></div>
+    </div>
+    <div id='proj2' class='project'>
+      <div class='p_text'>ANOTHER</div>
+      <div class='p_img'></div>
+    </div>
+    <div id='proj3' class='project'>
+      <div class='p_text'>FINAL</div>
+      <div class='p_img'></div>
+    </div>
+    <div id='proj4' class='project'>fda</div>
+    <div id='proj5' class='project'>fda</div>
+    <div id='proj6' class='project'>fda</div>
+    <div id='proj7' class='project'>fda</div>
+    <div id='proj8' class='project'>fda</div>
 
+
+  </div>
+
+  <div id='menu'>Some Menu stuff and Stuff</div>
+</div>
+
+
+
+<div id='content_container'>
+<!-- iFrame to project pages on desktop, link to page on mobile. 
+  Javascript to change iframe source or to open new link
+  
+  OR, button to switch between projects view and specific project???
+-->
+<iframe id='p_iframe' src='http://www.jesse.mu' frameborder="0"></iframe>
+</div>
 
 </body>
 
-<script>
+<!--script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -31,6 +69,6 @@
   ga('create', 'UA-50592837-3', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script-->
 
 </html>
