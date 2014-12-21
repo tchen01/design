@@ -1,17 +1,59 @@
-#proj1 > .p_img{
-  background-image: url(../image/proj1/image1.png);
-  background-size: cover; 
-
-}
-
-#proj2 > .p_img{
-  background-image: url(../image/proj1/image1.png);
-  background-position: 30% 20%; 
+/***** HALFTONE *****/
+#halftone > .p_img{
+  background-image: url(../projects/halftone/icon_dim.png);
   background-size: cover; 
 }
 
-#proj3 > .p_img{
-  background-image: url(../image/proj1/image1.png);
-  background-position: 10% 50%; 
+#halftone:hover{
+  color: black !important;
+}
+
+#halftone:hover > .p_img{
+  background-image: url(../projects/halftone/icon.png);
+  background-size: cover; 
+}
+
+/***** McKinnon's *****/
+#mckinnons > .p_img{
+  background-image: url(../projects/mckinnons/icon_dim.png);
+  background-size: cover; 
+}
+
+#menu_container:hover  #mckinnons{
+  color: rgba(0,0,0,0) !important;
+}
+
+#mckinnons:hover > .p_img{
+  background-image: url(../projects/mckinnons/icon.png);
+  background-size: cover; 
+}
+
+/***** posters *****/
+#poster > .p_img{
+  background-image: url(../projects/posters/icon_dim.png);
+  background-size: cover; 
+}
+
+#poster:hover{
+  color: #FCE435 !important;
+}
+
+#poster:hover > .p_img{
+  background-image: url(../projects/posters/icon.png);
+  background-size: cover; 
+}
+
+/***** DRAWING *****/
+#drawing > .p_img{
+  background-image: url(../projects/drawing/icon_dim.png);
+  background-size: cover; 
+}
+
+#drawing:hover{
+  color: black !important;
+}
+
+#drawing:hover > .p_img{
+  background-image: url(../projects/drawing/icon.png);
   background-size: cover; 
 }

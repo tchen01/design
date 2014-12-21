@@ -28,42 +28,38 @@ html, body, h1, p, ul{
 
 }
 
+
 /******************/
 /***   Layout   ***/
 /******************/
 
 #menu_container{
-  background: black; /* allows opacity to be greyscale */
-
   float: left;
-  width: 10%;
+  width: 15em; /* just set body font-size */
   height: 100%;
-  -webkit-transition: width 1s cubic-bezier(.7,0.01,.7,0.01); 
+  -webkit-transition: width 1.5s cubic-bezier(.8,0.01,.8,0.01); 
   box-sizing: border-box; 
 
 }
 
 #content_container{
-  background: blue;
-
-  float: left;
-  width: 90%;
+  background: pink;
+  margin-left: 15em;
   height: 100%;
-  -webkit-transition: width 1s cubic-bezier(.7,0.01,.7,0.01); 
+  -webkit-transition: margin-left 1.5s cubic-bezier(.8,0.01,.8,0.01); 
   /* this needs to be added to other things */
 
 }
 
 #menu_container:hover{
-  width: 25%;
+  width: 35em;
   -webkit-transition: width .2s; 
   padding-top: 0;
-
 }
 
 #menu_container:hover + #content_container{
-  width: 75%;
-  -webkit-transition: width .2s; 
+  margin-left: 35em;
+  -webkit-transition: margin-left .2s; 
 
 }
 
@@ -71,23 +67,12 @@ html, body, h1, p, ul{
 #projects_container{
   height: 90%;
   box-sizing: border-box;
-  padding-top: 5%;
   overflow-y: auto;  
   overflow-x: hidden;
   
-  
-  opacity: .8;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+
 }
 
-#projects_container:hover{
-  padding-top: 0;
-  opacity: 1;
-}
 
 #p_iframe{
   width: 100%;
@@ -95,84 +80,80 @@ html, body, h1, p, ul{
 }
 
 #menu{
-  background: green;
-
   width: 100%;
   height: 10%;
 }
 
 .project{
-  display: table;
   position: relative;
   width: 100%;
   height: 2em;
   line-height: 2em;
-  font-size: 200%;
+
+  font-size: 2em;
+  font-weight: 500;
+
+  -webkit-transition:  1.5s cubic-bezier(.8,0.01,.8,0.01);
 
 }
 
 #menu_container:hover .project{
+  font-size: 4em;
   height: 4em;
   line-height: 4em;
+  color: white;
+  
+  -webkit-transition: .2s;
 
-  font-size: 400%;
 }
+
 
 .p_img{
-  opacity: .4;
   width: 0%;
   height: 100%;
+  -webkit-transition-delay: 1.5s; 
 
-  
 }
+
 #menu_container:hover .p_img{
   width: 100%;
   height: 100%;
-}
+  -webkit-transition-delay: 0;
   
-.project:hover, .project:hover .p_img, .project:hover .p_text{
-  opacity: 1; 
 }
+
 
 .p_text{
   position: absolute;
-  z-index: 1000;
   width: 100%;
   height: 100%;
   text-align: center; /* and vertical*/
-  color: white;
-  font-weight: 500;
 }
 
 
+.landing{
+  background: LightGrey;
+  color: white;
+}
+
+.halftone{
+  background: red;
+  color: blue;
+}
+
+.mckinnons{
+
+}
+
+.poster{
+
+}
+
+.drawing{
+
+}
 
 @media (max-aspect-ratio: 4/3) {
-#menu_container{
-  width: 100%;
-  padding-top: 0;
-}
-#content_container{width: 0%;}
 
-#menu_container:hover{
-  width: 100%;
-  padding-top: 0;
-}
-
-#menu_container:hover + #content_container{
-  width: 0%;
-}
-
-.project{
-  height: 20%;
-}
-
-.p_img{
-  width: 100%;
-  height: 100%;
-}
-
-.p_text{
-  font-size: 400%;
-}
 
 }

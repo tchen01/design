@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Tyler Chen</title>
+<title>Tyler Chen Design</title>
 <meta name="description" content="">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width user-scalable=no">
 
-<!--script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
-<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script
+<script type="text/javascript" src="scripts/jquery.min.js"></script>-->
 <script type="text/javascript" src="scripts/background.js"></script>
+<script type="text/javascript" src="scripts/colorista.js"></script>
 
 <link href="font/brandon/stylesheet.css" rel="stylesheet" type="text/css" />  
 
@@ -20,31 +21,32 @@
 
 <body>
 
-<div id='menu_container'>
-  <!-- colorize based on project pages-->
-  <div id='projects_container'>
-    <div id='proj1' class='project' onclick="switcher('proj1')">
-      <div class='p_text'>PROJECT</div>
+<div id='menu_container' class='menu_container landing'>
+  <!-- colorize based on project pages
+    automate creation based on text file??-->
+  <div id='projects_container' >
+    <div id='halftone' class='project' onclick="switcher('halftone')">
+      <div class='p_text'>HALFTONE</div>
       <div class='p_img'></div>
     </div>
-    <div id='proj2' class='project'>
-      <div class='p_text'>ANOTHER</div>
+    <div id='mckinnons' class='project' onclick="switcher('mckinnons')">
+      <div class='p_text'>McKINNON'S</div>
       <div class='p_img'></div>
     </div>
-    <div id='proj3' class='project'>
-      <div class='p_text'>FINAL</div>
+    <div id='poster' class='project' onclick="switcher('poster')">
+      <div class='p_text'>POSTERS</div>
       <div class='p_img'></div>
     </div>
-    <div id='proj4' class='project'>fda</div>
-    <div id='proj5' class='project'>fda</div>
-    <div id='proj6' class='project'>fda</div>
-    <div id='proj7' class='project'>fda</div>
-    <div id='proj8' class='project'>fda</div>
-
-
+    <div id='drawing' class='project' onclick="switcher('drawing')">
+      <div class='p_text'>DRAWING</div>
+      <div class='p_img'></div>
+    </div>
   </div>
 
-  <div id='menu'>Some Menu stuff and Stuff</div>
+  <div id='menu'>
+    <div>contact/menu/info box
+    </div>
+  </div>
 </div>
 
 
@@ -55,7 +57,7 @@
   
   OR, button to switch between projects view and specific project???
 -->
-<iframe id='p_iframe' src='http://www.jesse.mu' frameborder="0"></iframe>
+<iframe id='p_iframe' src='./projects/landing/index.html' frameborder="0"></iframe>
 </div>
 
 </body>
