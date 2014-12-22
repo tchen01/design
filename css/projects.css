@@ -15,7 +15,7 @@
 
 /***** McKinnon's *****/
 #mckinnons > .p_img{
-  background-image: url(../projects/mckinnons/icon_dim.png);
+  background-image: url(../projects/mckinnons/ikon_dim.png);
   background-size: cover; 
 }
 
@@ -24,7 +24,7 @@
 }
 
 #mckinnons:hover > .p_img{
-  background-image: url(../projects/mckinnons/icon.png);
+  background-image: url(../projects/mckinnons/ikon.png);
   background-size: cover; 
 }
 
