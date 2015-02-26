@@ -1,59 +1,26 @@
-/***** HALFTONE *****/
-#halftone > .p_img{
-  background-image: url(../projects/halftone/icon_dim.png);
-  background-size: cover; 
+#bird{
+    background-image: url(../projects/drawing/birdIcon_dim.png);
+    background-size: cover;
 }
 
-#halftone:hover{
-  color: black !important;
+#bird:hover{
+    background-image: url(../projects/drawing/birdIcon.png);
 }
 
-#halftone:hover > .p_img{
-  background-image: url(../projects/halftone/icon.png);
-  background-size: cover; 
+#self{
+    background-image: url(../projects/drawing/selfIcon_dim.png);
+    background-size: cover;
 }
 
-/***** McKinnon's *****/
-#mckinnons > .p_img{
-  background-image: url(../projects/mckinnons/ikon_dim.png);
-  background-size: cover; 
+#self:hover{
+    background-image: url(../projects/drawing/selfIcon.png);
 }
 
-#menu_container:hover  #mckinnons{
-  color: rgba(0,0,0,0) !important;
+#name{
+    background-image: url(../projects/drawing/nameIcon_dim.png);
+    background-size: cover;
 }
 
-#mckinnons:hover > .p_img{
-  background-image: url(../projects/mckinnons/ikon.png);
-  background-size: cover; 
-}
-
-/***** posters *****/
-#poster > .p_img{
-  background-image: url(../projects/posters/icon_dim.png);
-  background-size: cover; 
-}
-
-#poster:hover{
-  color: #FCE435 !important;
-}
-
-#poster:hover > .p_img{
-  background-image: url(../projects/posters/icon.png);
-  background-size: cover; 
-}
-
-/***** DRAWING *****/
-#drawing > .p_img{
-  background-image: url(../projects/drawing/icon_dim.png);
-  background-size: cover; 
-}
-
-#drawing:hover{
-  color: black !important;
-}
-
-#drawing:hover > .p_img{
-  background-image: url(../projects/drawing/icon.png);
-  background-size: cover; 
+#name:hover{
+    background-image: url(../projects/drawing/nameIcon.png);
 }
