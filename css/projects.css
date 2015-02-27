@@ -55,3 +55,16 @@
 #mck:hover, #mck.focus{
     -webkit-filter: grayscale(0%);
 }
+
+#halftone{
+    background-image: url(../projects/halftone/boat.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #b2b2b2;
+    transition: 1.2s;
+}
+
+#halftone:hover, #halftone.focus{
+    background-color: white;
+}
