@@ -1,13 +1,14 @@
-document.getElementById('header').classList.add( 'expanded' );
-var scroll = document.getElementById( 'scroll' );
-var words = "create build destroy live make love craft <b>ART</b> ".split(" ");
-var times = [300, 150, 150, 200, 100, 200, 200, 300, 1000]
+if( document.referrer.indexOf(window.location.host) === -1 ){
+    var scroll = document.getElementById( 'scroll' );
+    var words = "create build destroy live make love craft <b>ART</b> ".split(" ");
+    var times = [350, 180, 180, 240, 130, 250, 250, 330, 1000]
 
+    var i=1
+    document.getElementById('header').classList.add( 'expanded' );
 
-var i=1
-
-scroll.innerText = words[0] + " ";
-wordLoop();
+    scroll.innerText = words[0] + " ";
+    wordLoop();
+}
 
 function wordLoop(){
     setTimeout(function(){

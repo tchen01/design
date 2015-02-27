@@ -1,0 +1,94 @@
+/* probably should remove vh units and stuff but they work so well.*/
+@charset "utf-8";
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+#header{
+    position: fixed;
+    background: white;
+    color: #a071a8;
+    font-size: 200%;
+    line-height: 50px;
+    width: 100%;
+    padding: 0 20% 0 20%;
+    box-sizing: border-box;
+    height: 50px;
+    text-align: right;
+    z-index: 1;
+    display: table;
+    transition: .7s;
+    transition-delay: .4s;
+}
+
+#header page{
+    font-style: italic;
+    float: left;   
+}
+#tyler{
+    font-weight: 100;
+}
+#chen{
+    font-weight: 700;
+}
+
+
+#contentContainer{
+    width: 60%;
+    padding: 50px 20% 0 20%;
+}
+
+html, body, h1, p, ul{
+	margin: 0;
+	padding: 0;
+	font-family: brandon_grotesque;
+    color: #a071a8;
+    font-weight: 400;
+}
+
+h1{
+    font-style: italic;   
+}
+
+
+/******************/
+/***   Layout   ***/
+/******************/
+
+img{
+    width: 100%;
+    padding-top: 5em;
+}
+img.nopad{
+    padding-top: 0em;   
+}
+/* why is this not working??? */
+.description{
+    float: right;
+    position: relative;
+    font-size: 60%;
+}
+
+@media (min-width: 1200px){
+ #header{
+     padding: 0 30% 0 30%;
+ }
+ #contentContainer{
+    width: 40%;
+    padding: 60px 30% 0 30%;
+    font-size: 115%;
+ }  
+}
+
+@media (max-width: 600px) {
+    #header{
+     padding: 0 2% 0 2%;   
+    }
+    #contentContainer{
+        width: 96%;
+        padding: 60px 2% 0 2%;
+    }
+
+}
