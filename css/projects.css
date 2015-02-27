@@ -1,26 +1,57 @@
 #bird{
-    background-image: url(../projects/drawing/birdIcon_dim.png);
+    background-image: url(../projects/drawing/birdIcon.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) contrast(80%) brightness(200%) ;
+    transition: 1.2s;
 }
 
-#bird:hover{
-    background-image: url(../projects/drawing/birdIcon.png);
+#bird:hover, #bird.focus{
+    -webkit-filter: grayscale(0%);
+    background-color: white;
 }
 
 #self{
-    background-image: url(../projects/drawing/selfIcon_dim.png);
-    background-size: cover;
-}
-
-#self:hover{
     background-image: url(../projects/drawing/selfIcon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) contrast(50%) brightness(80%);
+    transition: 1.2s;}
+
+#self:hover, #self.focus{
+    -webkit-filter: grayscale(0%);
 }
 
 #name{
-    background-image: url(../projects/drawing/nameIcon_dim.png);
+    background-image: url(../projects/drawing/nameIcon.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) contrast(30%) brightness(130%);
+    transition: 1.2s;}
+
+#name:hover, #name.focus{
+    -webkit-filter: grayscale(0%);
 }
 
-#name:hover{
-    background-image: url(../projects/drawing/nameIcon.png);
+#posters{
+    background-image: url(../projects/posters/icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) contrast(50%) brightness(150%);
+    transition: 1.2s;}
+
+#posters:hover, #posters.focus{
+    -webkit-filter: grayscale(0%);
+}
+
+#mck{
+    background-image: url(../projects/mckinnons/ikon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) contrast(50%);
+    transition: 1.2s;}
+
+#mck:hover, #mck.focus{
+    -webkit-filter: grayscale(0%);
 }
