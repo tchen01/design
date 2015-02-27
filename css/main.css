@@ -1,11 +1,6 @@
+/* probably should remove vh units and stuff but they work so well.*/
 @charset "utf-8";
-/* CSS Document 5/20 8:48*/
 
-/*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,300,100); /* 400 available*/
-
-/* mobile first */
-
-/* HTML TAGS */
 html, body{
 	height: 100%;
 	width: 100%;
@@ -23,7 +18,7 @@ html, body{
     z-index: 1;
     display: table;
     transition: .7s;
-    transition-delay: 1s;
+    transition-delay: .8s;
 }
 #scroll{
     font-size: 140%;
@@ -154,9 +149,9 @@ html, body, h1, p, ul{
 
 @media (max-width: 600px) {
     #contentContainer{
-        width: 100%;
-        height: 100vw;
-        padding: 60px 0 0 0;
+        width: 98%;
+        height: 98vw;
+        padding: 60px 1% 0 1%;
     }
     .wideGroup{
         width: 100%;

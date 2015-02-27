@@ -1,6 +1,7 @@
 document.getElementById('header').classList.add( 'expanded' );
 var scroll = document.getElementById( 'scroll' );
-var words = "create build destroy live make love craft <b>ART</b>".split(" ");
+var words = "create build destroy live make love craft <b>ART</b> ".split(" ");
+var times = [300, 150, 150, 200, 100, 200, 200, 300, 1000]
 
 
 var i=1
@@ -18,7 +19,7 @@ function wordLoop(){
             scroll.innerText = "";
             document.getElementById( 'header' ).classList.remove( 'expanded');
         }
-    }, 00)
+    }, times[i-1])
 }
 
 var timeout = setInterval(focuser, 6000);
