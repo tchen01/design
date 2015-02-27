@@ -49,10 +49,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     -webkit-filter: grayscale(100%) contrast(50%);
+    filter: grayscale(100%) contrast(50%);
+
     transition: 1.2s;}
 
 #mck:hover, #mck.focus{
+    filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
 
