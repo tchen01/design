@@ -1,64 +1,74 @@
-#bird{
-    background-image: url(../projects/drawing/birdIcon.png);
+.image > div{
+    
+}
+.image > div:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(100%) contrast(80%) brightness(200%) ;
     transition: 1.2s;
 }
 
-#bird:hover, #bird.focus{
-    -webkit-filter: grayscale(0%);
+.image > div:hover:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 1;
     background-color: white;
 }
 
-#self{
-    background-image: url(../projects/drawing/selfIcon.png);
+#bird{    
+    background: url(../projects/drawing/birdIcon_dim.png);
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(100%) contrast(50%) brightness(80%);
-    transition: 1.2s;}
-
-#self:hover, #self.focus{
-    -webkit-filter: grayscale(0%);
 }
+#bird:after{
+    background-image: url(../projects/drawing/birdIcon.png);
+}
+
+
+#self{
+    background-image: url(../projects/drawing/selfIcon_dim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#self:after{
+    background-image: url(../projects/drawing/selfIcon.png);
+}
+
 
 #name{
-    background-image: url(../projects/drawing/nameIcon.png);
+    background-image: url(../projects/drawing/nameIcon_dim.png);
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(100%) contrast(30%) brightness(130%);
-    transition: 1.2s;}
-
-#name:hover, #name.focus{
-    -webkit-filter: grayscale(0%);
 }
+#name:after{
+    background-image: url(../projects/drawing/nameIcon.png);}
+
 
 #posters{
-    background-image: url(../projects/posters/icon.png);
+    background-image: url(../projects/posters/icon_dim.png);
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(100%) contrast(50%) brightness(150%);
-    transition: 1.2s;}
-
-#posters:hover, #posters.focus{
-    -webkit-filter: grayscale(0%);
+}
+#posters:after{
+    background-image: url(../projects/posters/icon.png);
 }
 
 #mck{
-    background-image: url(../projects/mckinnons/ikon.png);
+    background-image: url(../projects/mckinnons/ikon_dim.png);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-
-    -webkit-filter: grayscale(100%) contrast(50%);
-    filter: grayscale(100%) contrast(50%);
-
-    transition: 1.2s;}
-
-#mck:hover, #mck.focus{
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
 }
+#mck:after{
+    background-image: url(../projects/mckinnons/ikon.png);
+}
+
 
 #halftone{
     background-image: url(../projects/halftone/boat.svg);
@@ -66,9 +76,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #b2b2b2;
-    transition: 1.2s;
 }
 
-#halftone:hover, #halftone.focus{
+#halftone:after{
+    background-image: url(../projects/halftone/boat.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: white;
 }
