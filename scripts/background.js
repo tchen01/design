@@ -1,9 +1,14 @@
+var scroll = document.getElementById( 'scroll' );
+var words = "create build destroy live make love craft <b>ART</b> ".split(" ");
+var times = [350, 180, 180, 240, 130, 250, 250, 330, 1000]
+var i=1;
 if( document.referrer.indexOf(window.location.host) === -1 ){
-    var scroll = document.getElementById( 'scroll' );
-    var words = "create build destroy live make love craft <b>ART</b> ".split(" ");
-    var times = [350, 180, 180, 240, 130, 250, 250, 330, 1000]
+    intro();
+}
 
-    var i=1
+function intro(){
+    i=1;
+    console.log(i);
     document.getElementById('header').classList.add( 'expanded' );
 
     scroll.innerText = words[0] + " ";
@@ -12,7 +17,8 @@ if( document.referrer.indexOf(window.location.host) === -1 ){
 
 function wordLoop(){
     setTimeout(function(){
-        scroll.innerHTML = words[i];   
+        scroll.innerHTML = words[i];  
+        console.log(i);
         i++;
         if( i <= words.length ){
             wordLoop();   

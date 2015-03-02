@@ -12,7 +12,7 @@
     transition: 1.2s;
 }
 
-.image > div:hover:after{
+.image > div:hover:after, .image > .focus:after{
     content: "";
     width: 100%;
     height: 100%;
@@ -26,7 +26,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#bird:after{
+#bird:after, #bird.focus:after{
     background-image: url(../projects/drawing/birdIcon.png);
 }
 
@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
 }
 
-#self:after{
+#self:after, #self.focus:after{
     background-image: url(../projects/drawing/selfIcon.png);
 }
 
@@ -47,7 +47,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#name:after{
+#name:after, #name.focus:after{
     background-image: url(../projects/drawing/nameIcon.png);}
 
 
@@ -56,7 +56,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#posters:after{
+#posters:after, #posters.focus:after{
     background-image: url(../projects/posters/icon.png);
 }
 
@@ -65,7 +65,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#mck:after{
+#mck:after, #mck.focus:after{
     background-image: url(../projects/mckinnons/ikon.png);
 }
 
