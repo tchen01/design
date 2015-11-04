@@ -73,13 +73,13 @@
 }
 
 #mck > div{
-    background-image: url(../projects/mckinnons/icon_dim.png);
+    background-image: url(../projects/McKinnons/icon_dim.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #mck > div:after, #mck > div.focus:after{
-    background-image: url(../projects/mckinnons/icon.png);
+    background-image: url(../projects/McKinnons/icon.png);
     background-position: center;
 }
 
