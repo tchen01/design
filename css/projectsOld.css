@@ -1,0 +1,87 @@
+.image > div{
+    
+}
+.image > div:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1.2s;
+}
+
+.image > div:hover:after, .image > .focus:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 1;
+    background-color: white;
+}
+
+#bird{    
+    background: url(../projects/drawing/birdIcon_dim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird:after, #bird.focus:after{
+    background-image: url(../projects/drawing/birdIcon.png);
+}
+
+
+#self{
+    background-image: url(../projects/drawing/selfIcon_dim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#self:after, #self.focus:after{
+    background-image: url(../projects/drawing/selfIcon.png);
+}
+
+
+#name{
+    background-image: url(../projects/drawing/nameIcon_dim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#name:after, #name.focus:after{
+    background-image: url(../projects/drawing/nameIcon.png);}
+
+
+#posters{
+    background-image: url(../projects/posters/icon_dim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#posters:after, #posters.focus:after{
+    background-image: url(../projects/posters/icon.png);
+}
+
+#mck{
+    background-image: url(../projects/mckinnons/ikon_dim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mck:after, #mck.focus:after{
+    background-image: url(../projects/mckinnons/ikon.png);
+}
+
+
+#halftone{
+    background-image: url(../projects/halftone/boat.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #b2b2b2;
+}
+
+#halftone:after{
+    background-image: url(../projects/halftone/boat.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}

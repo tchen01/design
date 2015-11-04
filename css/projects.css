@@ -1,7 +1,6 @@
-.image > div{
-    
+.item > div{
 }
-.image > div:after{
+.item > div:after{
     content: "";
     width: 100%;
     height: 100%;
@@ -12,7 +11,7 @@
     transition: 1.2s;
 }
 
-.image > div:hover:after, .image > .focus:after{
+.item > div:hover:after, .item > .focus:after{
     content: "";
     width: 100%;
     height: 100%;
@@ -21,56 +20,71 @@
     background-color: white;
 }
 
-#bird{    
+
+#self > div{
+    background-image: url(../projects/drawing/selfIcon_dim.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#self > div:after, #self > div.focus:after{
+    background-image: url(../projects/drawing/selfIcon.png);
+    background-position: center;
+}
+
+
+#bird > div{    
     background: url(../projects/drawing/birdIcon_dim.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-#bird:after, #bird.focus:after{
+#bird > div:after, #bird > div.focus:after{
     background-image: url(../projects/drawing/birdIcon.png);
 }
 
-
-#self{
-    background-image: url(../projects/drawing/selfIcon_dim.png);
+#vox > div{
+    background-image: url(../projects/tuftsVOX/icon_dim.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
-
-#self:after, #self.focus:after{
-    background-image: url(../projects/drawing/selfIcon.png);
+#vox > div:after, #vox > div.focus:after{
+    background-image: url(../projects/tuftsVOX/icon.png);
+    background-position: center;
 }
 
-
-#name{
+#name > div{
     background-image: url(../projects/drawing/nameIcon_dim.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-#name:after, #name.focus:after{
+#name > div:after, #name > div.focus:after{
     background-image: url(../projects/drawing/nameIcon.png);}
 
 
-#posters{
+#posters > div{
     background-image: url(../projects/posters/icon_dim.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-#posters:after, #posters.focus:after{
+#posters > div:after, #posters > div.focus:after{
     background-image: url(../projects/posters/icon.png);
 }
 
-#mck{
+#mck > div{
     background-image: url(../projects/mckinnons/ikon_dim.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
-#mck:after, #mck.focus:after{
+#mck > div:after, #mck > div.focus:after{
     background-image: url(../projects/mckinnons/ikon.png);
+    background-position: center;
 }
 
 
-#halftone{
+#halftone > div{
     background-image: url(../projects/halftone/boat.svg);
     background-size: cover;
     background-position: center;
@@ -78,10 +92,53 @@
     background-color: #b2b2b2;
 }
 
-#halftone:after{
+#halftone > div:after{
     background-image: url(../projects/halftone/boat.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
+}
+
+@media (min-width: 1200px){
+/* PAGE 1 */
+#self{
+    height: 600px;
+    width: 300px;
+    padding-top: 40px;
+}
+#self > div{
+    width: 250px;
+    float: right;
+}
+#bird{ 
+    height: 500px;
+    width: 500px;
+}
+    
+/*  PAGE 2  */
+#vox{
+    top: 80px;
+    width: 460px;
+    height: 230px;
+}
+#posters{
+    width: 340px;
+}
+#posters>div{
+    height: 500px;
+}
+#halftone{
+    width: 460px;
+    top: 80px;
+}
+#halftone > div{
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+/*  PAGE 3  */
+    
+
 }

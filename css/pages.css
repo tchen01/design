@@ -12,11 +12,14 @@ html, body{
     color: #a071a8;
     font-size: 200%;
     line-height: 50px;
-    width: 100%;
-    padding: 0 20% 0 20%;
+    width: 500px;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     height: 50px;
+    top: 0;
     text-align: right;
     z-index: 1;
     display: table;
@@ -37,8 +40,8 @@ html, body{
 
 
 #contentContainer{
-    width: 60%;
-    padding: 50px 20% 0 20%;
+    width: 500px;
+    margin: 50px auto;
 }
 
 html, body, h1, p, ul{
@@ -51,6 +54,11 @@ html, body, h1, p, ul{
 
 h1{
     font-style: italic;   
+}
+
+a{
+    text-decoration: underline;
+    color: inherit;
 }
 
 
@@ -74,17 +82,18 @@ img.nopad{
 
 @media (min-width: 1200px){
  #header{
-     padding: 0 30% 0 30%;
+     width: 800px;
  }
  #contentContainer{
-    width: 40%;
-    padding: 60px 30% 0 30%;
+    width: 800px;
+    margin: 60px auto;
     font-size: 115%;
  }  
 }
 
 @media (max-width: 600px) {
     #header{
+     width: 98%;
      padding: 0 2% 0 2%;   
     }
     #contentContainer{
