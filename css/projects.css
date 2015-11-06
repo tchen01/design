@@ -24,13 +24,13 @@
 #self > div{
     background-image: url(../projects/drawing/selfIcon_dim.png);
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
 }
 
 #self > div:after, #self > div.focus:after{
     background-image: url(../projects/drawing/selfIcon.png);
-    background-position: center;
+    background-position: center top;
 }
 
 
@@ -38,9 +38,11 @@
     background: url(../projects/drawing/birdIcon_dim.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 15% 65%;
 }
 #bird > div:after, #bird > div.focus:after{
     background-image: url(../projects/drawing/birdIcon.png);
+    background-position: 15% 65%;
 }
 
 #vox > div{
@@ -57,21 +59,24 @@
 #name > div{
     background-image: url(../projects/drawing/nameIcon_dim.png);
     background-size: cover;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
 }
 #name > div:after, #name > div.focus:after{
-    background-image: url(../projects/drawing/nameIcon.png);}
+    background-image: url(../projects/drawing/nameIcon.png);
+    background-position: 50% 40%;
+}
 
 
 #posters > div{
     background-image: url(../projects/posters/icon_dim.png);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 80%;
     background-repeat: no-repeat;
 }
 #posters > div:after, #posters > div.focus:after{
     background-image: url(../projects/posters/icon.png);
-    background-position: center;
+    background-position: 50% 80%;
 } 
 
 #mck > div{

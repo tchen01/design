@@ -4,7 +4,7 @@ var words = "create build destroy live make love craft <b>ART</b> ".split(" ");
 var times = [350, 180, 180, 240, 130, 250, 250, 330, 1000]
 var i=1;
 if( document.referrer.indexOf(window.location.host) === -1 ){
-    //  intro();
+      intro();
 }
 var hashes = ["page1", "page2", "page3"];
 function intro(){
@@ -34,11 +34,13 @@ function wordLoop(){
 
 //scroll through pages
 var scroll = 0;
-var page = 0;
+var page = location.hash? parseInt(location.hash.substr(location.hash.length - 1))-1 : 0;
 var pages = document.getElementsByClassName("page");
 var height = pages.length * 800;
+var navButtons = document.getElementById("navigation").children;
 var contentContainer = document.getElementById("contentContainer");
 var pHeight = document.getElementsByClassName("page")[0].offsetHeight;
+render();
 
 function reCalculateHeights(){
     height = pages.length * 800;
@@ -51,7 +53,6 @@ window.addEventListener("resize", reCalculateHeights);
 document.addEventListener("wheel",scrollHandler);
 window.addEventListener("keydown",keyHandler);
 
-var navButtons = document.getElementById("navigation").children;
 for(i=0; i<navButtons.length; i++){
     (function(){
         var x = i;
