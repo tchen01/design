@@ -15,6 +15,7 @@ a{
     top:0;
     background: white;
     color: #a071a8;
+    color: #464646;
     font-size: 200%;
     line-height: 50px;
     width: 100%;
@@ -56,6 +57,7 @@ a{
     width: 500px;
     height: 500px;
     margin: 50px auto;
+    padding-top: 50px;
 }
 
 html, body, h1, p, ul{
@@ -63,7 +65,6 @@ html, body, h1, p, ul{
 	padding: 0;
 	font-family: brandon_grotesque;
     color: white;
-
 }
 
 
@@ -125,11 +126,10 @@ html, body, h1, p, ul{
     width: 10px;
     border: 10px solid white;
 }
-    
+
 .currentPage{
-    background: #a071a8!important;
+    background: #464646!important;
 }
-    
 #contentContainer{
     width: 600px;
     height: 100%;
@@ -139,6 +139,7 @@ html, body, h1, p, ul{
 /*    overflow: hidden;*/
     transition: margin-top .6s linear;
 }
+ 
     
 .page{
     height: 600px;

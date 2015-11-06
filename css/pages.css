@@ -10,6 +10,7 @@ html, body{
     position: fixed;
     background: white;
     color: #a071a8;
+    color: #464646;
     font-size: 200%;
     line-height: 50px;
     width: 500px;
@@ -49,6 +50,7 @@ html, body, h1, p, ul{
 	padding: 0;
 	font-family: brandon_grotesque;
     color: #a071a8;
+    color: #464646;
     font-weight: 400;
 }
 

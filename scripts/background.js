@@ -26,10 +26,16 @@ function wordLoop(){
         if( i <= words.length ){
             wordLoop();   
         } else {
-            scrollText.textContent = "";
+            scrollText.textContent = '';
             document.getElementById( 'header' ).classList.remove( 'expanded');
         }
     }, times[i-1])
+}
+
+//prevent tabbing
+var links = document.getElementsByTagName('a');
+for(i=0; i<links.length; i++){
+    links[i].setAttribute('tabindex','-1');
 }
 
 //scroll through pages
@@ -79,9 +85,9 @@ function scrollHandler(e){
 }
 
 function keyHandler(e){
-    if( e.keyCode == '38'){
+    if( e.keyCode == '38' || e.keyCode == '33' ){
         scrollUp();
-    } else if( e.keyCode == '40'){
+    } else if( e.keyCode == '40' || e.keyCode == '34' ){
         scrollDown();
     }
 }
