@@ -66,11 +66,13 @@
 #posters > div{
     background-image: url(../projects/posters/icon_dim.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 #posters > div:after, #posters > div.focus:after{
     background-image: url(../projects/posters/icon.png);
-}
+    background-position: center;
+} 
 
 #mck > div{
     background-image: url(../projects/McKinnons/icon_dim.png);
@@ -100,41 +102,51 @@
     background-color: white;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1000px) and (min-height: 700px){
 /* PAGE 1 */
 #self{
-    height: 600px;
-    width: 300px;
-    padding-top: 40px;
+    height: 75%;
+    width: 40%;
+    padding-top: 5%;
 }
 #self > div{
-    width: 250px;
+    width: 80%;
     float: right;
 }
 #bird{ 
-    height: 500px;
-    width: 500px;
+    height: 60%;
+    width: 60%;
 }
+#mck{
+    width: 50%;
+    height: 25%;
+}
+#mck > div{
+/*    width: 140%;*/
+}
+
     
 /*  PAGE 2  */
 #vox{
-    top: 80px;
-    width: 460px;
-    height: 230px;
+    top: 7%;
+    width: 65%;
+    height: 30%;
 }
 #posters{
-    width: 340px;
+    width: 35%;
+    height: 10%;
 }
 #posters>div{
-    height: 500px;
+    height: 700%;
 }
 #halftone{
-    width: 460px;
-    top: 80px;
+    top: 7%;
+    width: 65%;
+    height: 65%;
 }
 #halftone > div{
-    width: 300px;
-    height: 300px;
+    width: 75%;
+    height: 75%;
     float: right;
 }
 

@@ -6,7 +6,7 @@ var i=1;
 if( document.referrer.indexOf(window.location.host) === -1 ){
     //  intro();
 }
-
+var hashes = ["page1", "page2", "page3"];
 function intro(){
     if( (' ' + document.getElementById('header').className + ' ').indexOf(' ' + 'expanded' + ' ') == -1 ){
         i=1;
@@ -44,10 +44,10 @@ function reCalculateHeights(){
     height = pages.length * 800;
     contentContainer = document.getElementById("contentContainer");
     pHeight = document.getElementsByClassName("page")[0].offsetHeight;
+    render();
 }
 
 window.addEventListener("resize", reCalculateHeights);
-
 document.addEventListener("wheel",scrollHandler);
 window.addEventListener("keydown",keyHandler);
 
@@ -61,24 +61,20 @@ for(i=0; i<navButtons.length; i++){
 
 function navHandler(i){
     console.log(i);
-    scrollTopSmooth(contentContainer,page*pHeight, i*pHeight);
     page = i;
-    navHighlight();
+    render();
 }
 
 function scrollHandler(e){
     var threshold = 8;
     scroll += e.wheelDelta/Math.abs(e.wheelDelta);
     if( scroll < -threshold){
-        console.log("scroll down");
         scroll = 0;
         scrollDown();
     } else if (scroll > threshold){
-        console.log("scroll up");
         scroll = 0;
         scrollUp();
     }
-//    console.log(scroll);
 }
 
 function keyHandler(e){
@@ -94,7 +90,6 @@ function scrollTopSmooth(ele,currentPos,finalPos){
     clearInterval(interval);
     ele.scrollTop = currentPos;
     delta = finalPos-currentPos;
-//    console.log(delta);
     var i = 0;
     interval = setInterval( increment, 50);
     function increment(){
@@ -107,23 +102,19 @@ function scrollTopSmooth(ele,currentPos,finalPos){
 }
 
 function scrollDown(){
-    scrollTopSmooth(contentContainer,page*pHeight,Math.min((page + 1), pages.length-1)*pHeight);
     page = Math.min((page + 1), pages.length-1);
-    navHighlight();
-    //    location.hash = "#page"+page;
+    render();
 }
 
 function scrollUp(){
-    scrollTopSmooth(contentContainer,page*pHeight,Math.max((page - 1), 0)*pHeight);
     page = Math.max((page - 1), 0);
-    navHighlight();
-//    location.hash = "#page"+page;
+    render();
 }
-
-function navHighlight(){
+function render(){
+    contentContainer.style.marginTop = -page * pHeight+"px";
     document.getElementsByClassName("currentPage")[0].classList.remove("currentPage");
     navButtons[page].classList.add("currentPage");
-        
+    location.hash = hashes[page];
 }
 
 //highlight images
