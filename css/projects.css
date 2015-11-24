@@ -90,6 +90,19 @@
     background-position: center;
 }
 
+#mockingbird > div{
+    background-image: url(../projects/mockingbird/icon_dim.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mockingbird > div:after, #mockingbird > div.focus:after{
+    background-image: url(../projects/mockingbird/icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 #halftone > div{
     background-image: url(../projects/halftone/boat.svg);
@@ -144,6 +157,18 @@
 #posters>div{
     height: 700%;
 }
+#mockingbird{
+    top: 7%;
+    width: 65%;
+    height: 65%;
+}
+#mockingbird > div{
+    width: 75%;
+    height: 75%;
+    float: right;
+}
+
+/*  PAGE 3  */
 #halftone{
     top: 7%;
     width: 65%;
@@ -154,8 +179,5 @@
     height: 75%;
     float: right;
 }
-
-/*  PAGE 3  */
-    
 
 }
