@@ -78,6 +78,15 @@
     background-position: 50% 80%;
 } 
 
+#spreads > div{
+    background-image: url(../projects/spreads/icon_dim.jpg);
+    background-position: 28%;
+}
+#spreads > div:after, #spreads > div.focus:after{
+    background-image: url(../projects/spreads/icon.jpg);
+    background-position: 28%;
+} 
+
 #mck > div{
     background-image: url(../projects/McKinnons/icon_dim.png);
 }

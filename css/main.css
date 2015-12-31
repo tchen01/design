@@ -108,11 +108,10 @@ html, body, h1, p, ul{
 }
 
 
-
-@media (min-width: 800px) and (min-height: 300px){
+@media (min-width: 500px) and (min-height: 300px){
 
 #contentContainer{
-    width: 600px;
+    width: 500px;
     height: 100%;
     margin: 0 auto;
     padding-top: 80px;
@@ -122,12 +121,25 @@ html, body, h1, p, ul{
 }
  
 
+.item{
+    width: 250px;
+    height: 250px;
+    position: relative;
+
+}
+    
+
+}
+
+@media (min-width: 800px) and (min-height: 300px){
+
+#contentContainer{
+    width: 600px;
+}
 
 .item{
     width: 300px;
     height: 300px;
-    position: relative;
-
 }
 
 }
@@ -140,7 +152,7 @@ html, body, h1, p, ul{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     #contentContainer{
         width: 98%;
         height: 98vw;
