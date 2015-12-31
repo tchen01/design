@@ -6,7 +6,6 @@ var i=1;
 if( document.referrer.indexOf(window.location.host) === -1 ){
       //intro();
 }
-var hashes = ["page1", "page2", "page3"];
 function intro(){
     if( document.getElementById('header').classList.length == 0 ){
         i=1;
@@ -53,3 +52,17 @@ for(i=0; i<links.length; i++){
 }
 
 */
+
+//highlight images
+var timeout = setInterval(focuser, 6000);
+document.onmousemove = function(){
+  clearInterval(timeout);
+  timeout = setInterval(focuser, 6000);
+}
+
+var images = document.getElementsByClassName( 'item' );
+function focuser(){
+    var n = Math.floor(Math.random() * images.length);
+    images[n].firstChild.classList.add( 'focus' );
+    setTimeout(function(){images[n].firstChild.classList.remove( 'focus' );}, 2000)
+}
