@@ -1,4 +1,7 @@
 .item > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .item > div:after{
     content: "";
@@ -8,6 +11,7 @@
     opacity: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     transition: 1.2s;
 }
 
@@ -23,9 +27,7 @@
 
 #self > div{
     background-image: url(../projects/drawing/selfIcon_dim.png);
-    background-size: cover;
     background-position: center top;
-    background-repeat: no-repeat;
 }
 
 #self > div:after, #self > div.focus:after{
@@ -35,9 +37,7 @@
 
 
 #bird > div{    
-    background: url(../projects/drawing/birdIcon_dim.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../projects/drawing/birdIcon_dim.png);
     background-position: 15% 65%;
 }
 #bird > div:after, #bird > div.focus:after{
@@ -47,20 +47,21 @@
 
 #vox > div{
     background-image: url(../projects/tuftsVOX/icon_dim.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 #vox > div:after, #vox > div.focus:after{
     background-image: url(../projects/tuftsVOX/icon.png);
-    background-position: center;
+}
+
+#closet > div{
+    background-image: url(../projects/closet/closetIcon_dim.jpg);
+}
+#closet > div:after, #casio > div.focus:after{
+    background-image: url(../projects/closet/closetIcon.jpg);
 }
 
 #name > div{
     background-image: url(../projects/drawing/nameIcon_dim.png);
-    background-size: cover;
     background-position: 50% 40%;
-    background-repeat: no-repeat;
 }
 #name > div:after, #name > div.focus:after{
     background-image: url(../projects/drawing/nameIcon.png);
@@ -70,9 +71,7 @@
 
 #posters > div{
     background-image: url(../projects/posters/icon_dim.png);
-    background-size: cover;
     background-position: 50% 80%;
-    background-repeat: no-repeat;
 }
 #posters > div:after, #posters > div.focus:after{
     background-image: url(../projects/posters/icon.png);
@@ -81,103 +80,36 @@
 
 #mck > div{
     background-image: url(../projects/McKinnons/icon_dim.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 #mck > div:after, #mck > div.focus:after{
     background-image: url(../projects/McKinnons/icon.png);
-    background-position: center;
 }
 
 #mockingbird > div{
     background-image: url(../projects/mockingbird/icon_dim.png);
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 #mockingbird > div:after, #mockingbird > div.focus:after{
     background-image: url(../projects/mockingbird/icon.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #halftone > div{
     background-image: url(../projects/halftone/boat.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     background-color: #b2b2b2;
 }
 
-#halftone > div:after{
+#halftone > div:after, #halftone > div.focus:after{
     background-image: url(../projects/halftone/boat.svg);
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-color: white;
 }
 
-@media (min-width: 1000px) and (min-height: 700px){
-/* PAGE 1 */
-#self{
-    height: 75%;
-    width: 40%;
-    padding-top: 5%;
-}
-#self > div{
-    width: 80%;
-    float: right;
-}
-#bird{ 
-    height: 60%;
-    width: 60%;
-}
-#mck{
-    width: 50%;
-    height: 25%;
-}
-#mck > div{
-/*    width: 140%;*/
+#glitch > div{
+    background-image: url(../projects/glitch/beachIcon_dim.jpg);
 }
 
-    
-/*  PAGE 2  */
-#vox{
-    top: 7%;
-    width: 65%;
-    height: 30%;
-}
-#posters{
-    width: 35%;
-    height: 10%;
-}
-#posters>div{
-    height: 700%;
-}
-#mockingbird{
-    top: 7%;
-    width: 65%;
-    height: 65%;
-}
-#mockingbird > div{
-    width: 75%;
-    height: 75%;
-    float: right;
-}
-
-/*  PAGE 3  */
-#halftone{
-    top: 7%;
-    width: 65%;
-    height: 65%;
-}
-#halftone > div{
-    width: 75%;
-    height: 75%;
-    float: right;
-}
-
+#glitch > div:after, #glitch > div.focus:after{
+    background-image: url(../projects/glitch/beachIcon.jpg);
+    background-color: white;
 }

@@ -3,7 +3,6 @@
 html, body{
 	height: 100%;
 	width: 100%;
-    background: white;
 }
 
 a{
@@ -15,12 +14,10 @@ a{
     position: fixed;
     top:0;
     background: white;
-    color: #a071a8;
-    color: #464646;
-    font-size: 200%;
-    line-height: 50px;
+    font-size: 300%;
+    line-height: 80px;
     width: 100%;
-    height: 50px;
+    height: 80px;
     text-align: center;
     z-index: 1;
     display: table;
@@ -50,22 +47,46 @@ a{
     font-weight: 700;
 }
 
-#navigation{
-    display: none;
-}
 
 #contentContainer{
     width: 500px;
     height: 500px;
     margin: 50px auto;
-    padding-top: 50px;
+    padding-top: 40px;
 }
+
+.hidden{
+    display: none!important;
+}
+
+#menuContainer, #contactContainer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: -4px;
+    padding-bottom: 10px;
+        display: inline-block;
+
+}
+
+#menu > a, #contact > a{
+    font-style: italic;
+    font-size: 80%;
+    font-weight: 400;
+    padding: 3px 1em;
+}
+
+#menu > a:hover, #contact > a:hover{
+    background: grey;
+    color: white;
+}
+
 
 html, body, h1, p, ul{
 	margin: 0;
 	padding: 0;
 	font-family: brandon_grotesque;
-    color: white;
+    background: white;
+    color: #464646;
 }
 
 
@@ -75,7 +96,7 @@ html, body, h1, p, ul{
 .item{
     color: #a071a8;
     width: 100%;
-    height: 200px;
+    height: 100%;
     display: block;
     float: left;
     padding: 1%;
@@ -87,89 +108,35 @@ html, body, h1, p, ul{
 }
 
 
-@media (min-width: 1200px){
-#html, body{
-    overflow: scroll;
-}
-    
-#navigation>div{
-    background: #d4d4d4;
-    height: 10px;
-    width: 10px;
-    border: 10px solid white;
-}
-    
-#contentContainer{
-    width: 900px;
-    margin: 0 auto;
-    padding-top: 100px;
-    font-size: 115%;
-}
-.item{
-    width: 50%;
-}
 
-}
+@media (min-width: 800px) and (min-height: 300px){
 
-@media (min-width: 1000px) and (min-height: 700px){
-#html, body{
-    overflow: hidden;
-}
-#navigation{
-    display: block;
-    position: fixed;
-    top: calc(50% - 30px * 3/2);
-    right: 0;
-}
-#navigation>div{
-    background: #d4d4d4;
-    height: 10px;
-    width: 10px;
-    border: 10px solid white;
-}
-
-.currentPage{
-    background: #464646!important;
-}
 #contentContainer{
     width: 600px;
     height: 100%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 80px;
     font-size: 115%;
 /*    overflow: hidden;*/
     transition: margin-top .6s linear;
 }
  
-    
-.page{
-    height: 600px;
-    width: 600px;
-/*    background: red;*/
-    padding-top: 50px;
-    padding-top: calc(50vh - 300px);
-}
+
 
 .item{
-    width: 400px;
-    height: 210px;
+    width: 300px;
+    height: 300px;
     position: relative;
 
 }
 
 }
 
-@media (min-width: 1200px) and (min-height: 700px){
+@media (min-width: 1200px) and (min-height: 300px){
 #contentContainer{
-    width: 800px;
+    width: 900px;
 }
     
-.page{
-    height: 800px;
-    width: 800px;
-    padding-top: calc(50vh - 380px);
-}
-
 }
 
 
