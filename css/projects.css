@@ -53,10 +53,10 @@
 }
 
 #closet > div{
-    background-image: url(../projects/closet/closetIcon_dim.jpg);
+    background-image: url(../projects/closet/allIcon_dim.jpg);
 }
 #closet > div:after, #casio > div.focus:after{
-    background-image: url(../projects/closet/closetIcon.jpg);
+    background-image: url(../projects/closet/allIcon.jpg);
 }
 
 #name > div{

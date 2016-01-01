@@ -16,13 +16,12 @@
 <body>
     <div id="header" onclick=""><div id="scroll"></div><span id="tyler">tyler</span><span id="chen">chen</span></div>
 
-
 <div id="contentContainer">
     <div id="menuContainer"><div id="menu">
-        <a onclick='show("all")'>ALL</a> |
-        <a onclick='show("gd")'>GRAPHIC DESIGN</a> |
-        <a onclick='show("ea")'>ELECTRONIC ART</a> |
-        <a onclick='show("ta")'>TRADITIONAL MEDIA</a>
+        <a onclick='show(this, "")' class="type focus">ALL</a> |
+        <a onclick='show(this, "gd")' class="type">GRAPHIC DESIGN</a> |
+        <a onclick='show(this, "ea")' class="type">ELECTRONIC ART</a> |
+        <a onclick='show(this, "ta")' class="type">TRADITIONAL MEDIA</a>
     </div></div>
     <a id="self" href="AAP.html" class="item ta"><div></div></a>
     <a id="bird" href="bird.html" class="item ta ea"><div></div></a>

@@ -75,9 +75,13 @@ a{
     padding: 3px 1em;
 }
 
-#menu > a:hover, #contact > a:hover{
+#menu > a:hover, #contact > a:hover, #menu > a.focus{
     background: grey;
     color: white;
+}
+
+#menu > a:hover, #contact > a:hover{
+    cursor: pointer;
 }
 
 
