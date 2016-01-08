@@ -68,7 +68,7 @@
 }
 
 #halftone > div{
-    background-image: url(../projects/halftone/boat.svgz);
+    background-image: url(../projects/halftone/icon_dim.jpg);
     background-color: #b2b2b2;
 }
 
@@ -121,7 +121,7 @@
 }
 
 #halftone > div:after, #halftone > div.focus:after{
-    background-image: url(../projects/halftone/boat.svgz);
+    background-image: url(../projects/halftone/icon.jpg);
     background-position: center;
     background-color: white;
 }
