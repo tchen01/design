@@ -30,66 +30,36 @@
     background-position: center top;
 }
 
-#self > div:after, #self > div.focus:after{
-    background-image: url(../projects/drawing/selfIcon.jpg);
-    background-position: center top;
-}
-
-
 #bird > div{    
     background-image: url(../projects/drawing/icon_dim.jpg);
-    background-position: 15% 65%;
-}
-#bird > div:after, #bird > div.focus:after{
-    background-image: url(../projects/drawing/icon.jpg);
     background-position: 15% 65%;
 }
 
 #vox > div{
     background-image: url(../projects/tuftsVOX/icon_dim.png);
 }
-#vox > div:after, #vox > div.focus:after{
-    background-image: url(../projects/tuftsVOX/icon.png);
-}
 
 #closet > div{
     background-image: url(../projects/closet/icon_dim.jpg);
-}
-#closet > div:after, #casio > div.focus:after{
-    background-image: url(../projects/closet/icon.jpg);
 }
 
 #name > div{
     background-image: url(../projects/drawing/nameIcon_dim.jpg);
     background-position: 0% 40%;
 }
-#name > div:after, #name > div.focus:after{
-    background-image: url(../projects/drawing/nameIcon.jpg);
-    background-position: 0% 40%;
-}
-
 
 #posters > div{
     background-image: url(../projects/posters/icon_dim.png);
     background-position: 50% 80%;
 }
-#posters > div:after, #posters > div.focus:after{
-    background-image: url(../projects/posters/icon.png);
-    background-position: 50% 80%;
-} 
+
 
 #spreads > div{
     background-image: url(../projects/spreads/icon_dim.jpg);
 }
-#spreads > div:after, #spreads > div.focus:after{
-    background-image: url(../projects/spreads/icon.jpg);
-} 
 
 #mck > div{
     background-image: url(../projects/McKinnons/icon_dim.jpg);
-}
-#mck > div:after, #mck > div.focus:after{
-    background-image: url(../projects/McKinnons/icon.jpg);
 }
 
 #mockingbird > div{
@@ -97,23 +67,63 @@
     background-position: center;
 }
 
-#mockingbird > div:after, #mockingbird > div.focus:after{
-    background-image: url(../projects/mockingbird/icon.png);
-}
-
 #halftone > div{
     background-image: url(../projects/halftone/boat.svgz);
     background-color: #b2b2b2;
+}
+
+#glitch > div{
+    background-image: url(../projects/glitch/icon_dim.jpg);
+}
+
+
+
+/* BRIGHT */
+
+#self > div:after, #self > div.focus:after{
+    background-image: url(../projects/drawing/selfIcon.jpg);
+    background-position: center top;
+}
+
+#bird > div:after, #bird > div.focus:after{
+    background-image: url(../projects/drawing/icon.jpg);
+    background-position: 15% 65%;
+}
+
+#vox > div:after, #vox > div.focus:after{
+    background-image: url(../projects/tuftsVOX/icon.png);
+}
+
+#closet > div:after, #casio > div.focus:after{
+    background-image: url(../projects/closet/icon.jpg);
+}
+
+#name > div:after, #name > div.focus:after{
+    background-image: url(../projects/drawing/nameIcon.jpg);
+    background-position: 0% 40%;
+}
+
+#posters > div:after, #posters > div.focus:after{
+    background-image: url(../projects/posters/icon.png);
+    background-position: 50% 80%;
+} 
+
+#spreads > div:after, #spreads > div.focus:after{
+    background-image: url(../projects/spreads/icon.jpg);
+} 
+
+#mck > div:after, #mck > div.focus:after{
+    background-image: url(../projects/McKinnons/icon.jpg);
+}
+
+#mockingbird > div:after, #mockingbird > div.focus:after{
+    background-image: url(../projects/mockingbird/icon.png);
 }
 
 #halftone > div:after, #halftone > div.focus:after{
     background-image: url(../projects/halftone/boat.svgz);
     background-position: center;
     background-color: white;
-}
-
-#glitch > div{
-    background-image: url(../projects/glitch/icon_dim.jpg);
 }
 
 #glitch > div:after, #glitch > div.focus:after{
