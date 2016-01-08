@@ -26,22 +26,22 @@
 
 
 #self > div{
-    background-image: url(../projects/drawing/selfIcon_dim.png);
+    background-image: url(../projects/drawing/selfIcon_dim.jpg);
     background-position: center top;
 }
 
 #self > div:after, #self > div.focus:after{
-    background-image: url(../projects/drawing/selfIcon.png);
+    background-image: url(../projects/drawing/selfIcon.jpg);
     background-position: center top;
 }
 
 
 #bird > div{    
-    background-image: url(../projects/drawing/birdIcon_dim.png);
+    background-image: url(../projects/drawing/icon_dim.jpg);
     background-position: 15% 65%;
 }
 #bird > div:after, #bird > div.focus:after{
-    background-image: url(../projects/drawing/birdIcon.png);
+    background-image: url(../projects/drawing/icon.jpg);
     background-position: 15% 65%;
 }
 
@@ -53,19 +53,19 @@
 }
 
 #closet > div{
-    background-image: url(../projects/closet/allIcon_dim.jpg);
+    background-image: url(../projects/closet/icon_dim.jpg);
 }
 #closet > div:after, #casio > div.focus:after{
-    background-image: url(../projects/closet/allIcon.jpg);
+    background-image: url(../projects/closet/icon.jpg);
 }
 
 #name > div{
-    background-image: url(../projects/drawing/nameIcon_dim.png);
-    background-position: 50% 40%;
+    background-image: url(../projects/drawing/nameIcon_dim.jpg);
+    background-position: 0% 40%;
 }
 #name > div:after, #name > div.focus:after{
-    background-image: url(../projects/drawing/nameIcon.png);
-    background-position: 50% 40%;
+    background-image: url(../projects/drawing/nameIcon.jpg);
+    background-position: 0% 40%;
 }
 
 
@@ -80,18 +80,16 @@
 
 #spreads > div{
     background-image: url(../projects/spreads/icon_dim.jpg);
-    background-position: 28%;
 }
 #spreads > div:after, #spreads > div.focus:after{
     background-image: url(../projects/spreads/icon.jpg);
-    background-position: 28%;
 } 
 
 #mck > div{
-    background-image: url(../projects/McKinnons/icon_dim.png);
+    background-image: url(../projects/McKinnons/icon_dim.jpg);
 }
 #mck > div:after, #mck > div.focus:after{
-    background-image: url(../projects/McKinnons/icon.png);
+    background-image: url(../projects/McKinnons/icon.jpg);
 }
 
 #mockingbird > div{
@@ -104,21 +102,21 @@
 }
 
 #halftone > div{
-    background-image: url(../projects/halftone/boat.svg);
+    background-image: url(../projects/halftone/boat.svgz);
     background-color: #b2b2b2;
 }
 
 #halftone > div:after, #halftone > div.focus:after{
-    background-image: url(../projects/halftone/boat.svg);
+    background-image: url(../projects/halftone/boat.svgz);
     background-position: center;
     background-color: white;
 }
 
 #glitch > div{
-    background-image: url(../projects/glitch/beachIcon_dim.jpg);
+    background-image: url(../projects/glitch/icon_dim.jpg);
 }
 
 #glitch > div:after, #glitch > div.focus:after{
-    background-image: url(../projects/glitch/beachIcon.jpg);
+    background-image: url(../projects/glitch/icon.jpg);
     background-color: white;
 }
