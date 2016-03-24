@@ -26,14 +26,20 @@
 
 
 #self > div{
-    background-image: url(../projects/drawing/selfIcon_dim.jpg);
+    background-image: url(../projects/aap/selfIcon_dim.jpg);
     background-position: center top;
 }
 
 #bird > div{    
-    background-image: url(../projects/drawing/icon_dim.jpg);
+    background-image: url(../projects/bird/icon_dim.jpg);
     background-position: 15% 65%;
 }
+
+
+#drawing > div{    
+    background-image: url(../projects/drawing/icon_dim.jpg);
+}
+
 
 #vox > div{
     background-image: url(../projects/tuftsVOX/icon_dim.png);
@@ -44,7 +50,7 @@
 }
 
 #name > div{
-    background-image: url(../projects/drawing/nameIcon_dim.jpg);
+    background-image: url(../projects/aap/nameIcon_dim.jpg);
     background-position: 0% 40%;
 }
 
@@ -81,13 +87,17 @@
 /* BRIGHT */
 
 #self > div:after, #self > div.focus:after{
-    background-image: url(../projects/drawing/selfIcon.jpg);
+    background-image: url(../projects/aap/selfIcon.jpg);
     background-position: center top;
 }
 
 #bird > div:after, #bird > div.focus:after{
-    background-image: url(../projects/drawing/icon.jpg);
+    background-image: url(../projects/bird/icon.jpg);
     background-position: 15% 65%;
+}
+
+#drawing > div:after, #drawing > div.focus:after{    
+    background-image: url(../projects/drawing/icon.jpg);
 }
 
 #vox > div:after, #vox > div.focus:after{
@@ -99,7 +109,7 @@
 }
 
 #name > div:after, #name > div.focus:after{
-    background-image: url(../projects/drawing/nameIcon.jpg);
+    background-image: url(../projects/aap/nameIcon.jpg);
     background-position: 0% 40%;
 }
 

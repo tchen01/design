@@ -43,9 +43,9 @@
   background-size: cover; 
 }
 
-/***** DRAWING *****/
+/***** BIRD *****/
 #drawing > .p_img{
-  background-image: url(../projects/drawing/icon_dim.png);
+  background-image: url(../projects/bird/icon_dim.png);
   background-size: cover; 
 }
 
@@ -54,6 +54,6 @@
 }
 
 #drawing:hover > .p_img{
-  background-image: url(../projects/drawing/icon.png);
+  background-image: url(../projects/bird/icon.png);
   background-size: cover; 
 }

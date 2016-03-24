@@ -80,7 +80,7 @@ img.bigpad{
 }
 
 img.nopad{
-    padding-top: 0em;   
+    padding: 0em;   
 }
 /* why is this not working??? */
 .description{
