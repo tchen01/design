@@ -82,6 +82,10 @@
     background-image: url(../projects/glitch/icon_dim.jpg);
 }
 
+#asia_glitch > div{
+    background-image: url(../projects/asia_glitch/icon_dim.jpg);
+}
+
 
 
 /* BRIGHT */
@@ -138,5 +142,10 @@
 
 #glitch > div:after, #glitch > div.focus:after{
     background-image: url(../projects/glitch/icon.jpg);
+    background-color: white;
+}
+
+#asia_glitch > div:after, #asia_glitch > div.focus:after{
+    background-image: url(../projects/asia_glitch/icon.jpg);
     background-color: white;
 }
